@@ -15,10 +15,7 @@ public class AppRun {
         floatSum();
 
         // 计算出一元二次方程的两个解
-        double a = 1.0;
-        double b = 3.0;
-        double c = -4.0;
-        sum1(a, b, c);
+        sum1(1.0, 3.0, -4.0);
 
         // 判断指定年龄是否是小学生（6～12岁)
         judge1(5);  // no
@@ -26,5 +23,8 @@ public class AppRun {
 
         // 将一组int值视为字符的Unicode编码，然后将它们拼成一个字符串
         sum2(new int[]{72, 105, 65281});
+
+        // 创建数组
+        creatArr();
     }
 }

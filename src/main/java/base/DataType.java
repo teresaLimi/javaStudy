@@ -1,5 +1,7 @@
 package base;
 
+import java.util.Arrays;
+
 public class DataType {
     public static void baseSum() {
         int x = 1;
@@ -55,11 +57,30 @@ public class DataType {
     }
 
     public static void sum2(int[] list) {
-        String s = "";
+        StringBuilder s = new StringBuilder();
         for (int item : list) {
-            s += "/u" + item;
+            char it = (char)item;
+            s.append(it);
         }
         System.out.println(s);
+        return;
+    }
+
+    public static void creatArr() {
+        int[] intArr = new int[] {1, 3, 4, 5};
+        System.out.println(intArr);
+        System.out.println(intArr.length);
+
+        int[] intArr2 = {1, 2, 3, 4, 5};
+        System.out.println(intArr2);
+        System.out.println(intArr2.length);
+
+        intArr2 = new int[]{1, 2, 3};
+        System.out.println(intArr2);
+        System.out.println(intArr2.length);
+
+        System.out.println(Arrays.toString(intArr2));
+
         return;
     }
 }
